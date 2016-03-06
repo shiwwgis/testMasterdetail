@@ -138,7 +138,7 @@ class MasterViewController: UITableViewController {
 
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("master count=\(siteNames!.count)");
+        //print("master count=\(siteNames!.count)");
         var count:Int=1;
         if section==0 //第一节
         {
