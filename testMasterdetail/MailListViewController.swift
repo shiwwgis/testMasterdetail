@@ -32,6 +32,18 @@ class MailListViewController: UITableViewController {
         }
         
         setupRightBarButtonItem();
+        
+        //3.加底部状态信息
+        let statusbutton = UIBarButtonItem(title: "编辑加底部状态信息", style: UIBarButtonItemStyle.Plain, target: self,action: nil)
+        statusbutton.width=0;//调左边距的(self.navigationController?.toolbar.bounds.width)!;
+        
+        
+        let items=[statusbutton];
+        //必须加上topViewController，否则不管用
+        self.navigationController?.topViewController!.setToolbarItems(items, animated: true)
+        
+        self.navigationController?.setToolbarHidden(false, animated:true)
+
 
     }
     
